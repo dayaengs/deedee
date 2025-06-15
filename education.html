@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education - Dayang Norazleeza</title>
+  <link rel="icon" type="image/jpg" href="deedae.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1e3a8a;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .center-img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      border-radius: 10px;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .content-text {
+      text-align: center;
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    nav.navbar {
+      background-color: #1e3a8a;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav.navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.navbar ul li {
+      display: inline-block;
+      position: relative;
+      margin: 0 15px;
+    }
+
+    nav.navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      display: inline-block;
+    }
+
+    nav.navbar ul li:hover > ul {
+      display: block;
+    }
+
+    nav.navbar ul ul {
+      display: none;
+      position: absolute;
+      background-color: #1e3a8a;
+      min-width: 160px;
+      z-index: 999;
+      border-radius: 0 0 6px 6px;
+    }
+
+    nav.navbar ul ul li {
+      display: block;
+      text-align: left;
+    }
+
+    nav.navbar ul ul li a {
+      padding: 10px;
+      display: block;
+    }
+
+    nav.navbar ul ul li a:hover {
+      background-color: #3742fa;
+    }
+
+    .container {
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 700px;
+      padding: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      color: #333;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+   <canvas id="animated-bg"></canvas>
+  <h1>My Education Journey 🎓</h1>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="Home.html" title="This is my home page">Home</a></li>
+      <li><a href="Education.html" title="This is my education background page">Education</a></li>
+      <li><a href="Achievements.html" title="This is my achievements page">Achievements</a></li>
+      <li><a href="Experiences.html" title="This is my experiences page">Experiences</a></li>
+      <li>
+        <a href="#" title="Contact me">Contact <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li>
+            <a href="http://wa.me/165581509" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </li>
+          <li>
+            <a href="mailto:dayaengs@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Primary School -->
+  <section class="container">
+    <h2>📘 Primary School 📘</h2>
+    <img src="sjkcstpeter.jpg" alt="SJK (C) St. Peter Telipok" class="center-img" />
+    <div class="content-text">
+      <p><strong>SJK (C) St. Peter Telipok</strong></p>
+      <p><em>2011 – 2016</em></p>
+      <p><strong>UPSR Result:</strong> 3As and 3Bs</p>
+    </div>
+  </section>
+
+  <!-- Secondary School -->
+  <section class="container">
+    <h2>🏫 Secondary School 🏫</h2>
+    <img src="smstpeter.jpeg" alt="SM St. Peter Telipok" class="center-img" />
+    <div class="content-text">
+      <p><strong>SM St. Peter Telipok</strong></p>
+      <p><em>2017 – 2021</em></p>
+      <p><strong>SPM Result:</strong></p>
+      <ul>
+        <li>1A+ (Bahasa Melayu)</li>
+        <li>1A (Pendidikan Islam)</li>
+        <li>1A- (Sejarah)</li>
+        <li>2B+ (English, Mathematics)</li>
+        <li>2B (Science, Art)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STPM -->
+  <section class="container">
+    <h2>📖 Pre-University (Form 6) 📖</h2>
+    <img src="smktamparuli.jpeg" alt="SMK Tamparuli" class="center-img" />
+    <div class="content-text">
+      <p><strong>SMK Tamparuli</strong></p>
+      <p><em>2022 – 2023</em></p>
+      <p><strong>STPM Result:</strong> CGPA 3.33</p>
+    </div>
+  </section>
+
+  <!-- University -->
+  <section class="container">
+    <h2>🎓 University 🎓</h2>
+    <img src="uitm - Copy.png" alt="UiTM Puncak Perdana" class="center-img" />
+    <div class="content-text">
+      <p><strong>Universiti Teknologi MARA (UiTM) Puncak Perdana</strong></p>
+      <p><em>2024 – Present</em></p>
+      <p><strong>Programme:</strong> Bachelor in Information Science (Hons) Library Management</p>
+      <p><strong>Current CGPA:</strong> 3.00</p>
+    </div>
+  </section>
+
+  <!-- Background Music -->
+ <audio id="bg-music" autoplay loop hidden>
+  <source src="songsong.m4a" type="audio/mpeg" />
+</audio>
+
+<script>
+  const audio = document.getElementById("bg-music");
+  audio.volume = 0.5; // Set volume between 0.0 (silent) and 1.0 (full volume)
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dayang Norazleeza binti Basman. All rights reserved.</p>
+  </footer>
+  <script>
+  const canvas = document.getElementById('animated-bg');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const particles = [];
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.radius = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+      this.color = 'rgba(59, 130, 246, 0.3)';
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+  }
+
+  function initParticles(num) {
+    for (let i = 0; i < num; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  initParticles(100);
+  animate();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
+</body>
+</html>

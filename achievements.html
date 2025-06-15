@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="deedae.jpg" />
+  <title>Achievements - Dayang's Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-top: 1.5rem;
+    }
+
+    .content-text {
+      text-align: center;
+      margin: 1.5rem 0;
+      color: #1e3a8a;
+      font-size: 1.2rem;
+    }
+
+    nav.navbar {
+      background-color: #1e3a8a;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav.navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.navbar ul li {
+      display: inline-block;
+      position: relative;
+      margin: 0 15px;
+    }
+
+    nav.navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      display: inline-block;
+    }
+
+    nav.navbar ul li:hover > ul {
+      display: block;
+    }
+
+    nav.navbar ul ul {
+      display: none;
+      position: absolute;
+      background-color: #1e3a8a;
+      min-width: 160px;
+      z-index: 999;
+      border-radius: 0 0 6px 6px;
+    }
+
+    nav.navbar ul ul li {
+      display: block;
+      text-align: left;
+    }
+
+    nav.navbar ul ul li a {
+      padding: 10px;
+      display: block;
+    }
+
+    nav.navbar ul ul li a:hover {
+      background-color: #3742fa;
+    }
+
+    table {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1e3a8a;
+      color: white;
+    }
+
+    td {
+      color: #333;
+    }
+
+    audio {
+      display: block;
+      margin: 2rem auto;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="animated-bg"></canvas>
+  <h1 class="slide-in-text">DAYANG NORAZLEEZA BINTI BASMAN</h1>
+  <hr />
+
+  <div class="slideshow-container">
+  <img class="mySlides" src="achievement1.jpg" style="width:100%">
+  <img class="mySlides" src="achievement2.jpg" style="width:100%">
+  <img class="mySlides" src="achievement3.jpg" style="width:100%">
+</div>
+ 
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Education.html">Education</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li><a href="Experiences.html">Experiences</a></li>
+      <li>
+        <a href="#">Contact <i class="fas fa-caret-down"></i></a>
+        <ul>
+          <li><a href="http://wa.me/165581509" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dayaengs@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h2>My Greatest Achievements and Milestones</h2>
+  <div class="content-text">
+    <p><i class="fas fa-trophy"></i> These are some of the proud moments and recognitions I’ve earned throughout my school years.</p>
+  </div>
+
+  <!-- Achievements Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Achievement Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2023</td><td>Model Student Award</td><td>Recognized for consistent discipline, leadership, and academic balance.</td></tr>
+      <tr><td>2023</td><td>President of English Club</td><td>Successfully organized debate and public speaking events at school level.</td></tr>
+      <tr><td>2023</td><td>Volunteer Appreciation Award</td><td>Honored for participating in weekly charity and cleanup programs.</td></tr>
+      <tr><td>2022</td><td>Active Student Recognition</td><td>Appreciated for participating in over 10 school activities and clubs.</td></tr>
+      <tr><td>2022</td><td>Runner-Up - Essay Writing Competition</td><td>Achieved second place in a district-level creative writing contest.</td></tr>
+      <tr><td>2021</td><td>School Prefect of the Year</td><td>Acknowledged for commitment and responsibility in maintaining school discipline.</td></tr>
+      <tr><td>2021</td><td>Gold Medal - Sports Day</td><td>Won 100m sprint during annual school sports event.</td></tr>
+      <tr><td>2020</td><td>Top 5 Finalist - Storytelling Contest</td><td>Reached the final round in a storytelling competition.</td></tr>
+      <tr><td>2020</td><td>Best Attendance Award</td><td>Maintained 100% attendance for the entire academic year.</td></tr>
+      <tr><td>2019</td><td>Junior Leadership Camp Graduate</td><td>Completed leadership and teamwork training during a 3-day camp.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="vivalavida.mp3" type="audio/mpeg" />
+    
+  </audio>
+
+  <footer>
+    <p>© 2025 Dayang Norazleeza binti Basman. All rights reserved.</p>
+  </footer>
+
+  <Background Animation Script>
+  <script>
+    const canvas = document.getElementById('animated-bg');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.radius = Math.random() * 2 + 1;
+        this.speedX = Math.random() * 0.5 - 0.25;
+        this.speedY = Math.random() * 0.5 - 0.25;
+        this.color = 'rgba(59, 130, 246, 0.3)';
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+    }
+
+    function initParticles(num) {
+      for (let i = 0; i < num; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    initParticles(100);
+    animate();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+ 
+</body>
+</html>

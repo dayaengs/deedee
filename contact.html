@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="deedae.jpg" />
+    <title>Contact - Dayang's Resume Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4ff;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #1e3a8a;
+        margin-top: 1.5rem;
+      }
+
+      nav.navbar {
+        background-color: #1e3a8a;
+        padding: 1rem;
+      }
+
+      nav.navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav.navbar li {
+        margin: 0 15px;
+      }
+
+      nav.navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav.navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .contact-container h2 {
+        text-align: center;
+        color: #1e3a8a;
+        margin-bottom: 1rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin: 0.5rem 0 0.2rem;
+        color: #333;
+        font-weight: bold;
+      }
+
+      input, textarea, select {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        background-color: #1e3a8a;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0f265f;
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+     <canvas id="animated-bg"></canvas>
+    <h1 class="slide-in-text">DAYANG NORAZLEEZA BINTI BASMAN</h1>
+    <hr/>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Achievements.html">Achievements</a></li>
+        <li><a href="Experiences.html">Experiences</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Form -->
+  <div class="contact-container">
+  <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+  <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+        <label for="reason">Reason for Contacting:</label>
+        <select id="reason" name="reason" required>
+          <option value="">-- Please select --</option>
+          <option value="inquiry">General Inquiry</option>
+          <option value="collaboration">Collaboration Request</option>
+          <option value="feedback">Feedback or Suggestion</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>© 2025 Dayang Norazleeza binti Basman. All rights reserved.</p>
+    </footer>
+    <script>
+  const canvas = document.getElementById('animated-bg');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const particles = [];
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.radius = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+      this.color = 'rgba(59, 130, 246, 0.3)';
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+  }
+
+  function initParticles(num) {
+    for (let i = 0; i < num; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  initParticles(100);
+  animate();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
+  </body>
+</html>

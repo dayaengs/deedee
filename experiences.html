@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="deedae.jpg" />
+    <title>Experiences - DAYANG'S RESUME WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8fafc;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1.slide-in-text {
+        text-align: center;
+        margin-top: 2rem;
+        color: #1e3a8a;
+        animation: slideIn 1s ease-in-out forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      nav.navbar {
+        background-color: #1e3a8a;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav.navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav.navbar ul li {
+        display: inline-block;
+        position: relative;
+        margin: 0 15px;
+      }
+
+      nav.navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 15px;
+        display: inline-block;
+      }
+
+      nav.navbar ul li:hover > ul {
+        display: block;
+      }
+
+      nav.navbar ul ul {
+        display: none;
+        position: absolute;
+        background-color: #1e3a8a;
+        min-width: 160px;
+        z-index: 999;
+        border-radius: 0 0 6px 6px;
+      }
+
+      nav.navbar ul ul li {
+        display: block;
+        text-align: left;
+      }
+
+      nav.navbar ul ul li a {
+        padding: 10px;
+        display: block;
+      }
+
+      nav.navbar ul ul li a:hover {
+        background-color: #3742fa;
+      }
+
+      .content-text {
+        text-align: center;
+        margin: 2rem;
+        color: #1e3a8a;
+        font-size: 1.2rem;
+      }
+
+      .experience-section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+      }
+
+      .experience-box {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 5px solid #1e3a8a;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      .experience-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .experience-box h4 {
+        color: #1e3a8a;
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-box p {
+        color: #374151;
+        line-height: 1.5;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      footer {
+        background-color: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+     <canvas id="animated-bg"></canvas>
+    <h1 class="slide-in-text">DAYANG NORAZLEEZA BINTI BASMAN</h1>
+    <hr />
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Achievements.html">Achievements</a></li>
+        <li><a href="Experiences.html">Experiences</a></li>
+        <li>
+          <a href="#">Contact <i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li>
+              <a href="http://wa.me/165581509" target="_blank" title="Contact me through WhatsApp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dayaengs@gmail.com" target="_blank" title="Send me an email">
+                <i class="fas fa-envelope"></i> Gmail
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content-text">
+      <p>My leadership and co-curricular experiences reflect dedication, responsibility, and active school involvement.</p>
+    </div>
+
+    <div class="experience-section">
+      <div class="experience-box">
+        <h4><i class="fas fa-star"></i> Special Duties Executive (EXCO), Hostel</h4>
+        <p>Appointed to manage special assignments in hostel affairs including organizing duties and student activities.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-calendar-check"></i> Event Manager, Hostel Event</h4>
+        <p>Led and coordinated a major student event within the hostel, handling planning, delegation, and execution.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-file-alt"></i> Secretary, Battle Yell Program – Fire and Rescue Cadet</h4>
+        <p>Prepared formal documents and handled communications for the school-wide cadet motivational program.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-medal"></i> Best Judge – Pre-U Basketball Tournament</h4>
+        <p>Chosen as the top judge for demonstrating fairness and accuracy during a school-level basketball competition.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-users"></i> Committee Member – Panorama: Sulalatus Salatin</h4>
+        <p>Helped plan and execute a literary event that highlighted Malay history and heritage in Form 6.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-quran"></i> Participant – School Khatam Al-Quran Ceremony</h4>
+        <p>Joined a special Quran recitation ceremony as part of a spiritual and communal celebration.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-futbol"></i> Games Committee – Joint Sports Project</h4>
+        <p>Managed student games for a sports day hosted by the Fire and Rescue Cadet and Royal Malaysian Police Cadet units.</p>
+      </div>
+
+      <div class="experience-box">
+        <h4><i class="fas fa-user-edit"></i> Secretary – Fire and Rescue Cadet Association</h4>
+        <p>Maintained records, prepared minutes, and assisted in running cadet meetings and activities efficiently.</p>
+      </div>
+    </div>
+
+    <!-- Experience Summary Table -->
+    <div class="content-text">
+      <h2>Experience Summary Table</h2>
+      <p>Quick overview of key leadership roles and responsibilities.</p>
+    </div>
+
+    <div style="overflow-x:auto; max-width: 1000px; margin: auto; padding: 1rem;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead style="background-color: #1e3a8a; color: white;">
+          <tr>
+            <th style="padding: 12px;">Role</th>
+            <th style="padding: 12px;">Organization/Event</th>
+            <th style="padding: 12px;">Key Responsibility</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #f1f5f9;">
+            <td style="padding: 12px;">EXCO</td>
+            <td>Hostel</td>
+            <td>Managing student activities</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px;">Event Manager</td>
+            <td>Hostel Event</td>
+            <td>Event planning and coordination</td>
+          </tr>
+          <tr style="background-color: #f1f5f9;">
+            <td style="padding: 12px;">Secretary</td>
+            <td>Battle Yell Program</td>
+            <td>Documentation and communication</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px;">Committee Member</td>
+            <td>PANORAMA Event</td>
+            <td>Planning cultural program</td>
+          </tr>
+          <tr style="background-color: #f1f5f9;">
+            <td style="padding: 12px;">Games Committee</td>
+            <td>Joint Sports Project</td>
+            <td>Student games management</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+<!-- Gallery & Highlights -->
+<section style="max-width: 1200px; margin: auto; padding: 2rem;">
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Gallery & Highlights</h2>
+    <p style="color: #555;">A glimpse into the meaningful moments and milestones in my journey.</p>
+  </div>
+
+  <!-- Image Gallery -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+    <!-- Gambar-gambar -->
+    <div class="image-box"><img src="exp1.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp2.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp3.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp4.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp5.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp6.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp7.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp8.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp9.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp10.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp11.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp12.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp13.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp14.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp15.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp16.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp17.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp19.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp20.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp21.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp22.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp23.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp29.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp30.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp31.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp32.jpg" alt="experience"></div>
+    <div class="image-box"><img src="exp33.jpg" alt="experience"></div>
+     <div class="image-box"><img src="exp35.jpg" alt="experience"></div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section style="max-width: 1000px; margin: auto; padding: 2rem;">
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <h2 style="font-size: 2rem;">Video Highlights</h2>
+    <p style="color: #555;">Special moments captured in motion.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+    <!-- Video-video -->
+    <video controls class="video-gallery">
+      <source src="exp24.mp4" type="video/mp4">
+    </video>
+    <video controls class="video-gallery">
+      <source src="exp25.mp4" type="video/mp4">
+    </video>
+    <video controls class="video-gallery">
+      <source src="exp26.mp4" type="video/mp4">
+    </video>
+    <video controls class="video-gallery">
+      <source src="exp27.mp4" type="video/mp4">
+    </video>
+    <video controls class="video-gallery">
+      <source src="exp28.mp4" type="video/mp4">
+    </video>
+    <video controls class="video-gallery">
+      <source src="exp34.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- Styling -->
+<style>
+  .image-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-gallery {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 600px) {
+    .image-box, .video-gallery {
+      height: 160px;
+      border-radius: 8px;
+    }
+  }
+</style>
+
+
+<!-- Styling -->
+<style>
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+
+  .video-gallery {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 600px) {
+    .gallery-img, .video-gallery {
+      border-radius: 8px;
+    }
+  }
+</style>
+
+<!-- Background Music -->
+ <!-- Background Music -->
+<audio id="bg-music" autoplay loop hidden>
+  <source src="unstoppable.m4a" type="audio/mpeg" />
+</audio>
+
+<script>
+  const audio = document.getElementById("bg-music");
+  audio.volume = 0.8;
+</script>
+ 
+    <footer>
+      <p>© 2025 Dayang Norazleeza binti Basman. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+  const canvas = document.getElementById('animated-bg');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const particles = [];
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.radius = Math.random() * 2 + 1;
+      this.speedX = Math.random() * 0.5 - 0.25;
+      this.speedY = Math.random() * 0.5 - 0.25;
+      this.color = 'rgba(59, 130, 246, 0.3)';
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+  }
+
+  function initParticles(num) {
+    for (let i = 0; i < num; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  initParticles(100);
+  animate();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+</script>
+
+</div>
+ 
+<!-- Lightbox Overlay -->
+<div id="lightbox" onclick="closeLightbox()" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;">
+  <img id="lightbox-img" style="
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+  " />
+
+  <script>
+  function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src;
+    lightbox.style.display = 'flex';
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+</script>
+ 
+</div> 
+  </body>
+</html> 
